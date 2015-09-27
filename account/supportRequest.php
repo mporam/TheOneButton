@@ -53,8 +53,11 @@ Service provided by Support.Me";
     $mail->WordWrap = 78;
 
     if($mail->Send()) {
-        echo 'Success!';
-        //header('Location: index.php?request=success');
+        header('Location: /account/?request=success');
+        exit();
     }
+
+    header('Location: /account/?request=error');
+    exit();
 
 }
