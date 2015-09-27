@@ -1,2 +1,4 @@
 .idea
 includes/db.php
+vendor/
+backup/
